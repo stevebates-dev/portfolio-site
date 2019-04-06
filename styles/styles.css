@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+  }
+  
+  /* Grow */
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  /* Shrink */
+  .hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 75px;
+    background-color: #282828;    
+    width: 100%;
+    z-index: 5;
+  }
+  
+  #navbar li {
+    float: right;
+    vertical-align: middle;
+    list-style-type: none;
+    line-height: 75px;
+    margin: 0 40px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  #welcome-section {
+    top: 0;
+    height: 100vh;
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url(/images/dlanor-s-703975-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    color: #FFF;
+  }
+
+  #welcome-section * {
+    padding: 5px;
+  }
+  
+  #welcome-content {
+    padding-top: 45vh;
+  }
+
+  #profile-pic {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(/images/me.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -20px;
+    padding: 10px;
+  }
+
+  #about {
+    padding: 75px 15px 15px 15px;
+    margin-top: -75px;
+    text-align: center;
+    background: #F3EAEB;
+    z-index: 1;
+  }
+  
+  #about h3 {
+    padding: 15px;
+  }
+
+  #about p {
+    margin: 15px;
+  }
+
+  #contact {
+    background-color: #F3EAEB;
+    text-align: center;
+  }
+  
+  #contact h3 {
+    padding: 15px;
+  }
+
+  .contact-details {
+    display: inline-block;
+    margin: 0px 40px 40px 40px;
+    text-decoration: none;
+    color: black;
+  }
+
+  footer {
+    height: 100px;
+    background-color:#282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+
+  @media screen and (min-width: 301px) and (max-width: 600px) {
+    
+    #navbar li {
+      display: inline-block;
+      float: none;
+      margin: 0 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 300px) {
+    #navbar li {
+      float: none;
+      display: block;
+      line-height: 1em;
+      margin: 10px auto;
+    }
+
+    #navbar {
+      height: 88px;
+    }
+
+    #about {
+      padding: 88px 15px 15px 15px;
+      margin-top: -88px;
+    }
+  
+    #projects {
+      padding: 108px 15px 15px 15px;
+      margin-top: -88px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+  
+    .project-tile {
+      margin: 40px 0;
+    }
+
+  }
+
+  @media screen and (max-width: 225px) {
+    .contact-details {
+      margin: 0px 0px 40px 0px;
+    }
+  }
+  
